@@ -86,5 +86,6 @@ public class SecurityConfig {
         response.setStatus(status);
         response.setContentType(MediaType.APPLICATION_JSON_VALUE);
         response.getWriter().write(objectMapper.writeValueAsString(new MessageResponse(message)));
+                @CrossOrigin(origins = "https://secureloginsystem-production-df7e.up.railway.app")
     }
 }
