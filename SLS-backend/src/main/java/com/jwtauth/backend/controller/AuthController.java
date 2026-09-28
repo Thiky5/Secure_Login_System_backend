@@ -78,5 +78,6 @@ public class AuthController {
                 .roles(roles)
                 .build();
         return ResponseEntity.ok(response);
+        @CrossOrigin(origins = "https://secureloginsystem-production-df7e.up.railway.app")
     }
 }
